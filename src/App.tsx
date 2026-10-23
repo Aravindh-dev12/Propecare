@@ -48,7 +48,7 @@ function Home() {
           <Link className="sector-feature" to="/works/solar"><img src={solar} alt="Solar infrastructure"/><div><span>01</span><h3>Solar</h3><p>Plant infrastructure, electrical balance-of-plant and power evacuation.</p></div></Link>
           <Link className="sector-feature sector-feature--wind" to="/works/windmill"><img src={wind} alt="Wind turbines"/><div><span>02</span><h3>Wind</h3><p>Electrical packages, site interfaces and movement of turbine components.</p></div></Link>
           <Link className="sector-feature sector-feature--transmission" to="/works/transmission"><img src={transmission} alt="Power transmission infrastructure"/><div><span>03</span><h3>Transmissions</h3><p>High-voltage lines, substation interties and grid evacuation engineering.</p></div></Link>
-          <Link className="sector-feature sector-feature--highways" to="/works/highways"><img src={transport} alt="Highway corridor and heavy transit"/><div><span>04</span><h3>Highway Works</h3><p>Highway corridor transit, modular haulage and route engineering.</p></div></Link>
+          <Link className="sector-feature sector-feature--highways" to="/works/highways"><img src={transmission} alt="Highway corridor and heavy transit"/><div><span>04</span><h3>Highway Works</h3><p>Highway corridor transit, modular haulage and route engineering.</p></div></Link>
         </div>
       </div>
     </section>
@@ -64,7 +64,7 @@ function Home() {
       <div className="wrap method-layout">
         <div className="method-image"><img src={grid} alt="Electrical infrastructure"/><div><span>FIELD PRINCIPLE</span><b>Make the interfaces visible before they become problems.</b></div></div>
         <div><span className="kicker">04 / HOW WE DELIVER</span><h2>Plan the route. Control the interface. Prove the handover.</h2>
-          <div className="method-list">{['Scope the real requirement','Validate site and route constraints','Coordinate people, equipment and documentation','Test, close out and hand over'].map((x,i)=><div key={x}><span>0{i+1}</span><b>{x}</b><p>{['Understand the cargo, capacity, drawings, access and project milestones before mobilisation.','Identify physical, electrical, regulatory and operational constraints while there is still time to respond.','Keep procurement, contractors, transport, construction and commissioning aligned to one delivery sequence.','Capture evidence, resolve punch points and leave the client with a clear completion record.'][i]}</p></div>)}</div>
+          <div className="method-list">{['Scope the real requirement','Validate site and route constraints','Coordinate people, equipment and documentation','Test, close out and hand over'].map((x,i)=><div key={x}><span>0{i+1}</span><b>{x}</b><p>{['Understand the cargo, capacity, drawings, access and project milestones before mobilisation.','Identify physical, electrical, regulatory and operational constraints while there is still time to respond.','Keep procurement, contractors, transmission, construction and commissioning aligned to one delivery sequence.','Capture evidence, resolve punch points and leave the client with a clear completion record.'][i]}</p></div>)}</div>
         </div>
       </div>
     </section>
@@ -81,8 +81,8 @@ function About() {
   return <Page type="about" title="Who We Are" lead="A field-focused infrastructure partner for renewable energy and power projects." image={grid}>
     <div className="about-opening"><div><span className="kicker">THE PROPECARE VIEW</span><h2>Clean-energy projects are won at the interfaces.</h2></div><p>Propercare Infra Projects works across renewable generation, electrical infrastructure and specialist movement. Our role is to make the practical connections between engineering intent and site execution clearer: what needs to arrive, where it needs to go, what must be ready before it arrives and what evidence is needed before handover.</p></div>
     <div className="about-values">{[['01','Execution','Turn drawings, schedules and requirements into coordinated field activity.'],['02','Engineering','Respect equipment limits, access constraints, electrical interfaces and commissioning logic.'],['03','Safety','Build route, site and work controls into the plan rather than treating them as paperwork after the fact.'],['04','Communication','Give clients and partners a usable view of progress, dependencies, decisions and risks.'],['05','Adaptability','Scale the team around a package instead of forcing every project into one template.'],['06','Accountability','Close the loop from mobilisation through testing, documentation and handover.']].map(([n,t,d])=><article key={n}><span>{n}</span><h3>{t}</h3><p>{d}</p></article>)}</div>
-    <div className="about-band"><div><span className="kicker">WHAT WE LEARNED FROM THE MARKET</span><h3>The best renewable sites treat logistics, engineering and commissioning as one conversation.</h3></div><div><p>Across the industry, leading logistics specialists emphasise cargo analysis, route surveys, equipment selection and site readiness; renewable EPC companies emphasise design, construction, testing and long-term support; larger energy groups emphasise scale, reliability and sustainability. Propercare’s proposition sits at the intersection of those needs.</p><Link className="text-link" to="/resources/industry-references" style={{display:'inline-flex',alignItems:'center',gap:'5px'}}><span>View industry research</span><ArrowRight size={14}/></Link></div></div>
-    <div className="about-standards"><div><span>PROJECT DISCIPLINE</span><b>Scope before mobilisation</b><p>Clear inputs, responsibilities and acceptance criteria.</p></div><div><span>FIELD DISCIPLINE</span><b>Control the interfaces</b><p>Site, transport, electrical and contractor dependencies stay visible.</p></div><div><span>HANDOVER DISCIPLINE</span><b>Evidence before close</b><p>Testing, records and punch-list closure support confident handover.</p></div></div>
+    <div className="about-band"><div><span className="kicker">WHAT WE LEARNED FROM THE MARKET</span><h3>The best renewable sites treat transmission, engineering and commissioning as one conversation.</h3></div><div><p>Across the industry, leading transmission specialists emphasise cargo analysis, route surveys, equipment selection and site readiness; renewable MVP companies emphasise design, construction, testing and long-term support; larger energy groups emphasise scale, reliability and sustainability. Propercare’s proposition sits at the intersection of those needs.</p><Link className="text-link" to="/resources/industry-references" style={{display:'inline-flex',alignItems:'center',gap:'5px'}}><span>View industry research</span><ArrowRight size={14}/></Link></div></div>
+    <div className="about-standards"><div><span>PROJECT DISCIPLINE</span><b>Scope before mobilisation</b><p>Clear inputs, responsibilities and acceptance criteria.</p></div><div><span>FIELD DISCIPLINE</span><b>Control the interfaces</b><p>Site, transmission, electrical and contractor dependencies stay visible.</p></div><div><span>HANDOVER DISCIPLINE</span><b>Evidence before close</b><p>Testing, records and punch-list closure support confident handover.</p></div></div>
   </Page>;
 }
 
@@ -112,7 +112,7 @@ function Works() {
         <span className="kicker">DELIVERED &amp; EXECUTED PROJECTS</span>
         <h2>Verified Track Record &amp; Field Delivery</h2>
         <p style={{maxWidth:'680px',color:'var(--muted)',marginTop:'6px',fontSize:'15px',lineHeight:'1.6'}}>
-          Review our actively executed utility solar plants and heavy multimodal transport operations with on-site imagery, technical specifications, and drone footage.
+          Review our actively executed utility solar plants and heavy multimodal transmission operations with on-site imagery, technical specifications, and drone footage.
         </p>
       </div>
       <div className="work-projects-grid">
@@ -142,7 +142,7 @@ function Works() {
 
 function Work() {
   const {slug}=useParams();
-  const resolvedSlug = slug === 'transport' ? 'highways' : slug;
+  const resolvedSlug = slug === 'transmission' ? 'highways' : slug;
   const work=works.find(w=>w.slug===resolvedSlug)??works[0];
   const WorkIcon = work.slug === 'solar' ? SunMedium : work.slug === 'windmill' ? Wind : work.slug === 'transmission' ? Zap : Truck;
   return <Page type="work-detail" title={work.title} lead={work.short} image={work.image}>
@@ -223,8 +223,8 @@ function ProjectDetail() {
     civil: 'Structure & BOS',
     ground: 'Ground Progress',
     electrical: 'Substation & Grid',
-    logistics: 'Heavy Haulage & Convoy',
-    transport: 'Transport Operations'
+    transmission: 'Heavy Haulage & Convoy',
+    transmission: 'Transmission Operations'
   };
 
   const rawCategories = Array.from(new Set(allMediaItems.map((i: any) => i.category).filter(Boolean)));
@@ -416,7 +416,7 @@ function ProjectDetail() {
         <div className="project-cta-block">
           <div>
             <span className="kicker">INTERESTED IN SIMILAR SCALE?</span>
-            <h3>Deploying solar, wind, or heavy logistics infrastructure in Tamil Nadu?</h3>
+            <h3>Deploying solar, wind, or heavy transmission infrastructure in Tamil Nadu?</h3>
             <p>Our project desk coordinates site survey, civil foundations, mounting systems, pooling substations, and route haulage with single-source accountability.</p>
           </div>
           <div className="cta-actions">
@@ -466,11 +466,11 @@ function BlogsPage() {
   const displayed = activeCategory === 'all' ? blogList : blogList.filter(a => a.tag === activeCategory);
 
   return (
-    <Page type="resources-blogs" title="Renewable &amp; Logistics Insights" lead="Engineering playbooks, field execution methodologies, grid codes and infrastructure knowledge from the ground." image={solar}>
+    <Page type="resources-blogs" title="Renewable &amp; Transmission Insights" lead="Engineering playbooks, field execution methodologies, grid codes and infrastructure knowledge from the ground." image={solar}>
       <div className="resource-header">
         <span className="kicker">ARTICLES &amp; FIELD PERSPECTIVES</span>
-        <h2>Deep Dives into EPC, Evacuation, Substation &amp; ODC Engineering</h2>
-        <p>Our engineering insights turn field lessons and utility-scale delivery into practical guidance for developers, EPCs, and asset owners across South India.</p>
+        <h2>Deep Dives into MVP, Evacuation, Substation &amp; ODC Engineering</h2>
+        <p>Our engineering insights turn field lessons and utility-scale delivery into practical guidance for developers, MVPs, and asset owners across South India.</p>
       </div>
 
       {/* Clean professional filter pills without outer box, border, or background */}
@@ -818,10 +818,10 @@ function UpdatesPage() {
 
 function IndustryReferences() {
   return (
-    <Page type="resources-research" title="Industry References" lead="A researched reference set behind Propercare’s renewable, logistics and EPC positioning." image={grid}>
+    <Page type="resources-research" title="Industry References" lead="A researched reference set behind Propercare’s renewable, transmission and MVP positioning." image={grid}>
       <div className="research-intro">
         <span className="kicker">MARKET RESEARCH / 2026</span>
-        <h2>What leading renewable and specialist logistics sites are doing well.</h2>
+        <h2>What leading renewable and specialist transmission sites are doing well.</h2>
         <p>We reviewed industry benchmarks to identify useful patterns: service-led navigation, project case studies, route and cargo planning, technology/product depth, local solar conversion journeys, sustainability reporting and clear contact paths. These references inform Propercare’s content architecture.</p>
       </div>
       <div className="research-grid">
@@ -839,7 +839,7 @@ function IndustryReferences() {
       </div>
       <div className="research-principles">
         <h3>Applied to Propercare</h3>
-        <div><b>Service depth</b><span>Separate pages for EPC, evacuation, substations and commissioning.</span></div>
+        <div><b>Service depth</b><span>Separate pages for MVP, evacuation, substations and commissioning.</span></div>
         <div><b>Project evidence</b><span>Sector pages and delivery sequences rather than generic capability cards.</span></div>
         <div><b>Local relevance</b><span>Content shaped for Tamil Nadu renewable and industrial project conditions.</span></div>
         <div><b>Trust signals</b><span>Clear scope, safety, testing, documentation and enquiry pathways.</span></div>
@@ -863,7 +863,7 @@ function Article() {
 }
 
 function Clients() {
- return <Page type="clients" title="Our Clients" lead="A partnership model for developers, EPCs, manufacturers, operators and infrastructure stakeholders." image={solar}>
+ return <Page type="clients" title="Our Clients" lead="A partnership model for developers, MVPs, manufacturers, operators and infrastructure stakeholders." image={solar}>
    <div className="clients-opening">
      <div>
        <span className="kicker">WHO WE SUPPORT</span>
@@ -872,7 +872,7 @@ function Clients() {
      <p>Propercare should not claim relationships it has not earned. Instead, this page explains the stakeholder groups we are designed to support and the information each group needs from a project partner.</p>
    </div>
    <div className="stakeholder-grid">{clients.map((c,i)=><article key={c.name}><span>0{i+1}</span><h3>{c.name}</h3><p>{c.need}</p><b>{c.value}</b></article>)}</div>
-   <div className="client-proof"><div><span className="kicker">FOR DEVELOPERS & OWNERS</span><h3>Visibility on scope, progress, risk and readiness.</h3><p>Use Propercare when coordination across multiple delivery interfaces needs one practical point of contact.</p></div><div><span className="kicker">FOR EPC & OEM PARTNERS</span><h3>Execution support that respects your engineering package.</h3><p>Bring us the defined scope and site constraints; we focus on the field, logistics and handover interfaces around it.</p></div></div>
+   <div className="client-proof"><div><span className="kicker">FOR DEVELOPERS & OWNERS</span><h3>Visibility on scope, progress, risk and readiness.</h3><p>Use Propercare when coordination across multiple delivery interfaces needs one practical point of contact.</p></div><div><span className="kicker">FOR MVP & OEM PARTNERS</span><h3>Execution support that respects your engineering package.</h3><p>Bring us the defined scope and site constraints; we focus on the field, transmission and handover interfaces around it.</p></div></div>
  </Page>;
 }
 
@@ -880,14 +880,14 @@ function Contact() {
  const [sent,setSent]=useState(false);
  return <Page type="contact" title="Contact Us" lead="Start with the project facts. We will help identify the right delivery package." image={transmission}>
   <div className="contact-command"><div><span className="kicker">PROJECT DESK</span><h2>Tell us what needs to move, build, connect or commission.</h2><p>Useful inputs include project location, asset type, approximate capacity or dimensions, current phase, target dates and any known access or grid constraints.</p><div className="contact-details"><b>+91 9790005158</b><span>propecareindia@gmail.com</span><span>Karur, Tamil Nadu, India</span></div></div>
-   <form className="contact-form" onSubmit={e=>{e.preventDefault();setSent(true)}}><div className="form-heading"><span>ENQUIRY</span><b>{sent?'Thank you - enquiry captured.':'Project information'}</b></div><label>Name<input required placeholder="Your name"/></label><label>Company<input required placeholder="Company / organisation"/></label><label>Work email<input required type="email" placeholder="name@company.com"/></label><label>Phone<input type="tel" placeholder="+91 XXXXX XXXXX"/></label><label>Requirement<select defaultValue=""><option value="" disabled>Select a requirement</option><option>Solar EPC / electrical works</option><option>Wind infrastructure</option><option>Heavy transport / ODC logistics</option><option>Power evacuation</option><option>Substation / switchyard</option><option>Testing &amp; commissioning</option></select></label><label>Project details<textarea rows={5} placeholder="Location, scope, capacity, cargo dimensions, route or target date"/></label><button className="button" type="submit">{sent?'Enquiry submitted ✓':'Send project enquiry'}</button></form></div>
+   <form className="contact-form" onSubmit={e=>{e.preventDefault();setSent(true)}}><div className="form-heading"><span>ENQUIRY</span><b>{sent?'Thank you - enquiry captured.':'Project information'}</b></div><label>Name<input required placeholder="Your name"/></label><label>Company<input required placeholder="Company / organisation"/></label><label>Work email<input required type="email" placeholder="name@company.com"/></label><label>Phone<input type="tel" placeholder="+91 XXXXX XXXXX"/></label><label>Requirement<select defaultValue=""><option value="" disabled>Select a requirement</option><option>Solar MVP / electrical works</option><option>Wind infrastructure</option><option>Transmission works</option><option>Power evacuation</option><option>Substation / switchyard</option><option>Testing &amp; commissioning</option></select></label><label>Project details<textarea rows={5} placeholder="Location, scope, capacity, cargo dimensions, route or target date"/></label><button className="button" type="submit">{sent?'Enquiry submitted ✓':'Send project enquiry'}</button></form></div>
   <div className="contact-gallery"><span className="kicker">OUR TEAM AT WORK</span><h3>Solar infrastructure delivery across Tamil Nadu.</h3><div className="contact-gallery-grid"><div className="contact-gallery-card"><img src="/images/propecare-site-1.jpg" alt="Worker installing solar mounting structure on site"/><small>SITE WORK</small><span>Mounting Structure Installation</span></div><div className="contact-gallery-card"><img src="/images/propecare-site-2.jpg" alt="Propecare branded crew working on solar infrastructure"/><small>FIELD TEAM</small><span>Propecare Crew On-Site</span></div><div className="contact-gallery-card"><img src="/images/propecare-site-3.jpg" alt="Team pouring cement for solar panel foundations"/><small>FOUNDATION</small><span>Solar Foundation Works</span></div></div></div>
   <div className="contact-route"><span>WHAT HAPPENS NEXT</span><div><b>01 / Review</b><p>We understand the scope and missing inputs.</p></div><div><b>02 / Discuss</b><p>We clarify site, route, engineering and schedule constraints.</p></div><div><b>03 / Define</b><p>We identify the appropriate package and next technical step.</p></div></div>
  </Page>;
 }
 
 function Page({type,title,lead,image,children}:{type:string;title:string;lead:string;image:string;children:ReactNode}) {
- return <><section className={'page-masthead page-masthead--'+type}><img className="page-masthead-image" src={image} alt=""/><div className="page-masthead-overlay"/><div className="wrap page-masthead-content"><span className="kicker">PROPECARE / {type.replace('-',' ').toUpperCase()}</span><h1>{title}</h1><p>{lead}</p><div className="masthead-actions"><Link className="button light" to="/contact">Discuss a project</Link><span>Solar · Wind · Transmission Works · EPC</span></div></div><div className="masthead-index"><span>{type==='about'?'01':type==='work'?'02':type.includes('service')?'03':type.includes('resources')?'04':type==='clients'?'05':type==='contact'?'06':'07'}</span><span>FIELD-READY INFRASTRUCTURE</span></div></section><main className={'page-body page-body--'+type}>{children}</main></>;
+ return <><section className={'page-masthead page-masthead--'+type}><img className="page-masthead-image" src={image} alt=""/><div className="page-masthead-overlay"/><div className="wrap page-masthead-content"><span className="kicker">PROPECARE / {type.replace('-',' ').toUpperCase()}</span><h1>{title}</h1><p>{lead}</p><div className="masthead-actions"><Link className="button light" to="/contact">Discuss a project</Link><span>Solar · Wind · Transmission Works · MVP</span></div></div><div className="masthead-index"><span>{type==='about'?'01':type==='work'?'02':type.includes('service')?'03':type.includes('resources')?'04':type==='clients'?'05':type==='contact'?'06':'07'}</span><span>FIELD-READY INFRASTRUCTURE</span></div></section><main className={'page-body page-body--'+type}>{children}</main></>;
 }
 
 export default function App(){
