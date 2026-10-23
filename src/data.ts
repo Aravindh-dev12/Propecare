@@ -339,46 +339,46 @@ export const works=[
   bullets:['High-voltage transmission corridors','Tower foundation and lattice erection','Conductor stringing and sagging','Pooling substation evacuation interfaces','Testing, clearance and statutory charging'],
   details:['Route alignment, profiling, crossing permissions and statutory approvals.','Pile/raft foundations, tower erection and structural torque verification.','Precision conductor stringing, earth wire/OPGW installation and tensioning.','Coordination of line terminal bays, isolators and lightning arrestors.','Pre-charging dielectric tests, protection setting sign-off and energisation.'],
   steps:['Route survey, profiling and clearances','Tower foundation civil works & erection','Stringing, tensioning and OPGW installation','Pre-commissioning tests and grid charging'],
-  stepDetails:['Map right-of-way, highway/rail crossings, soil profiles and statutory approvals.','Cast reinforced foundations and erect lattice towers with strict torque controls.','Pull conductors and optical ground wire with calibrated tension and clearance checks.','Execute insulation resistance, line continuity tests and energise the transmission link.'],
+  stepDetails:['Map right-of-way, infrastructure/rail crossings, soil profiles and statutory approvals.','Cast reinforced foundations and erect lattice towers with strict torque controls.','Pull conductors and optical ground wire with calibrated tension and clearance checks.','Execute insulation resistance, line continuity tests and energise the transmission link.'],
   projects:[]
  },
  {
   slug:'highways',
-  category:'HIGHWAYS / CORRIDOR INFRASTRUCTURE',
-  title:'Highway Works',
-  short:'Route-engineered transit, highway corridor clearance, and multi-axle modular movement for critical infrastructure.',
-  headline:'Engineered highway transit and corridor execution for mission-critical infrastructure.',
-  description:'Highway corridors and access roadways are vital arteries for heavy industrial and renewable movement. Propercare delivers highway transit engineering, heavy multi-axle modular haulage, intersection modifications, bridge load distribution, and end-to-end corridor transmission.',
+  category:'INFRASTRUCTURE / CORRIDOR INFRASTRUCTURE',
+  title:'Infrastructure Works',
+  short:'Route-engineered transit, infrastructure corridor clearance, and multi-axle modular movement for critical infrastructure.',
+  headline:'Engineered infrastructure transit and corridor execution for mission-critical infrastructure.',
+  description:'Infrastructure corridors and access roadways are vital arteries for heavy industrial and renewable movement. Propercare delivers infrastructure transit engineering, heavy multi-axle modular haulage, intersection modifications, bridge load distribution, and end-to-end corridor transmission.',
   image:transmission,
-  bullets:['Highway corridor survey and route engineering','Multi-axle hydraulic modular transmission','Bridge capacity & bypass assessment','Junction turn clearance & road widening','Escorted transit and zero-incident delivery'],
+  bullets:['Infrastructure corridor survey and route engineering','Multi-axle hydraulic modular transmission','Bridge capacity & bypass assessment','Junction turn clearance & road widening','Escorted transit and zero-incident delivery'],
   details:['Comprehensive corridor analysis, overhead wire elevations and turning geometry.','Heavy payload movement utilizing synchronized hydraulic multi-axle trailers.','Structural load distribution calculations and bridge bypass coordination.','Temporary civil works, turning radius modifications and approach road creation.','Live drone tracking, pilot vehicles, and safe delivery sign-off.'],
-  steps:['Corridor survey & route validation','Trailer configuration & axle load engineering','Highway transit with drone convoy tracking','Site approach delivery and precision handover'],
+  steps:['Corridor survey & route validation','Trailer configuration & axle load engineering','Infrastructure transit with drone convoy tracking','Site approach delivery and precision handover'],
   stepDetails:['Analyze turning radii, vertical clearances, bridge structural ratings and permits.','Mobilize multi-axle modular units matching cargo weight and center of gravity.','Execute movement under escorted controls with continuous aerial drone monitoring.','Safely navigate site gates, bay positioning and cargo tie-down release.'],
   projects:[
     {
       id:'transmission-1',
-      title:'Highway Project 1 - Heavy ODC & Multimodal Transmission',
-      name:'Project Highway Transit 1',
+      title:'Infrastructure Project 1 - Heavy ODC & Multimodal Transmission',
+      name:'Project Infrastructure Transit 1',
       capacity:'Heavy ODC Payload',
       client:'State Transmission Corporation / Heavy Electrical OEM',
-      location:'Tamil Nadu Highway Corridor, India',
+      location:'Tamil Nadu Infrastructure Corridor, India',
       status:'Successfully Delivered',
-      tag:'HIGHWAY CORRIDOR HAULAGE',
+      tag:'INFRASTRUCTURE CORRIDOR HAULAGE',
       scope:'Hydraulic multi-axle modular trailer conveyance of heavy transformers and oversized renewable equipment with comprehensive route surveys, bridge bypass engineering, and live drone convoy tracking.',
       image:'/projects/transport/transport1/DJI_0078.JPG',
-      stat:'Multi-Axle Highway Haulage',
+      stat:'Multi-Axle Infrastructure Haulage',
       metrics:[
         {label:'Movement Type',value:'ODC Heavy Modular Movement'},
         {label:'Equipment',value:'Hydraulic Multi-Axle Modular Trailer Fleet'},
-        {label:'Corridor Scope',value:'Highway & Rural Inter-District Transit'},
+        {label:'Corridor Scope',value:'Infrastructure & Rural Inter-District Transit'},
         {label:'Footage Records',value:'8 Drone Videos & 9 Site Photos'},
         {label:'Route Feasibility',value:'Bridge Bypass & Overhead Wire Clearance'},
         {label:'Safety Standard',value:'Zero-Incident Escorted Convoy'}
       ],
       media:[
         {type:'image',category:'aerial',tag:'CONVOY TRANSIT',url:'/projects/transport/transport1/DJI_0078.JPG',title:'Drone High-Angle View - Hydraulic Modular Trailer in Transit (DJI_0078)'},
-        {type:'image',category:'aerial',tag:'HIGHWAY CORRIDOR',url:'/projects/transport/transport1/DJI_0079.JPG',title:'Aerial Perspective of Escorted Heavy Haulage Convoy (DJI_0079)'},
-        {type:'image',category:'transmission',tag:'JUNCTION CLEARANCE',url:'/projects/transport/transport1/DJI_0092.JPG',title:'Highway Intersection Turning Radius & Road Clearance (DJI_0092)'},
+        {type:'image',category:'aerial',tag:'INFRASTRUCTURE CORRIDOR',url:'/projects/transport/transport1/DJI_0079.JPG',title:'Aerial Perspective of Escorted Heavy Haulage Convoy (DJI_0079)'},
+        {type:'image',category:'transmission',tag:'JUNCTION CLEARANCE',url:'/projects/transport/transport1/DJI_0092.JPG',title:'Infrastructure Intersection Turning Radius & Road Clearance (DJI_0092)'},
         {type:'image',category:'transmission',tag:'ELEVATED TRANSIT',url:'/projects/transport/transport1/DJI_0098.JPG',title:'Bridge Structure Transit & Axle Load Distribution (DJI_0098)'},
         {type:'image',category:'transmission',tag:'RURAL CORRIDOR',url:'/projects/transport/transport1/DJI_0099.JPG',title:'Rural Access Road Navigation & Pilot Escort Alignment (DJI_0099)'},
         {type:'image',category:'transmission',tag:'HYDRAULIC STABILITY',url:'/projects/transport/transport1/DJI_0101.JPG',title:'Trailer Hydraulic Bed Stability & Ground Clearance Inspection (DJI_0101)'},
@@ -392,7 +392,7 @@ export const works=[
           type:'video',
           category:'video',
           tag:'CONVOY MOBILISATION',
-          title:'01 · Highway Convoy Mobilisation Flight',
+          title:'01 · Infrastructure Convoy Mobilisation Flight',
           subtitle:'Drone tracking flight over hydraulic multi-axle modular convoy starting transit',
           duration:'1:12',
           src:'/projects/transport/transport1/DJI_0064.MP4',
@@ -425,7 +425,7 @@ export const works=[
           type:'video',
           category:'video',
           tag:'BRIDGE TRANSIT',
-          title:'04 · Highway Bridge & Elevated Section Transit',
+          title:'04 · Infrastructure Bridge & Elevated Section Transit',
           subtitle:'Drone monitoring bridge approach, slow crawl speed, and weight dispersion',
           duration:'1:05',
           src:'/projects/transport/transport1/DJI_0103.MP4',
@@ -476,7 +476,7 @@ export const works=[
           poster:'/projects/transport/transport1/DJI_0120.JPG'
         }
       ],
-      videoNotice:'Drone surveillance and convoy progression records captured during critical highway and site delivery operations.'
+      videoNotice:'Drone surveillance and convoy progression records captured during critical infrastructure and site delivery operations.'
     }
   ]
  }
@@ -491,7 +491,7 @@ export const sectors=[
  {name:'SOLAR',focus:'Generation + electrical balance-of-plant'},
  {name:'WIND',focus:'Turbine sites + collection + access'},
  {name:'TRANSMISSION',focus:'High-voltage lines + towers + grid intertie'},
- {name:'HIGHWAYS',focus:'Corridor transit + heavy haulage + route engineering'}
+ {name:'INFRASTRUCTURE',focus:'Corridor transit + heavy haulage + route engineering'}
 ];
 export const clients=[
  {name:'Renewable developers & asset owners',need:'Need predictable progress, visible risk and confidence that site packages are ready when required.',value:'Visibility + accountability'},
@@ -553,9 +553,9 @@ export const newsUpdates = [
     tag: 'ODC HAULAGE',
     category: 'Heavy Transmission',
     location: 'Ennore to Central Tamil Nadu Corridor',
-    summary: 'Propecare Transmission coordinated an escorted 380 km multimodal highway haulage for a critical 400kV generator transformer, negotiating bridge bypass engineering and zero-incident site gate offloading.',
+    summary: 'Propecare Transmission coordinated an escorted 380 km multimodal infrastructure haulage for a critical 400kV generator transformer, negotiating bridge bypass engineering and zero-incident site gate offloading.',
     highlights: [
-      '380 km escorted heavy haulage with highway authority clearances',
+      '380 km escorted heavy haulage with infrastructure authority clearances',
       '16-axle hydraulic modular trailer configuration deployed',
       'Zero-incident delivery with hydraulic jacking onto foundation pad'
     ],
@@ -685,7 +685,7 @@ export const socialMediaPosts = [
     url: 'https://www.youtube.com/@PropecareInfraProjects',
     tag: 'YOUTUBE 4K BROADCAST',
     projectTitle: 'ODC Multimodal Transmission',
-    description: 'Documentation of the 380 km highway convoy transit, bypass route engineering, and zero-incident jacking of 160-tonne generator transformer onto foundation.'
+    description: 'Documentation of the 380 km infrastructure convoy transit, bypass route engineering, and zero-incident jacking of 160-tonne generator transformer onto foundation.'
   },
   {
     id: 'yt-3',
@@ -739,7 +739,7 @@ export const socialMediaPosts = [
     id: 'ig-2',
     type: 'instagram' as const,
     platform: 'instagram',
-    title: 'On the Road: 16-Axle Hydraulic Modular Trailer Navigating Night Highway Transit',
+    title: 'On the Road: 16-Axle Hydraulic Modular Trailer Navigating Night Infrastructure Transit',
     subtitle: '@propecareinfra',
     duration: '0:42',
     metrics: '2,180 likes · 142 comments',
@@ -749,7 +749,7 @@ export const socialMediaPosts = [
     url: 'https://www.instagram.com/propecareinfra',
     tag: 'INSTAGRAM REEL',
     projectTitle: 'Heavy Haulage Transmission',
-    description: 'Moving 160 tonnes of power infrastructure across Tamil Nadu highways. Safety first, zero compromises. #HeavyHaulage #ODCTransport #LogisticsEngineering'
+    description: 'Moving 160 tonnes of power infrastructure across Tamil Nadu infrastructure. Safety first, zero compromises. #HeavyHaulage #ODCTransport #LogisticsEngineering'
   },
   {
     id: 'ig-3',
@@ -805,7 +805,7 @@ export const socialMediaPosts = [
     url: 'https://www.linkedin.com/company/propecare-infra-projects',
     tag: 'LINKEDIN ENGINEERING NOTE',
     projectTitle: 'Specialised Transmission',
-    description: 'Moving super-heavy transformer equipment requires extensive swept-path simulations, axle weight distribution analysis, and coordinated highway authority permits.'
+    description: 'Moving super-heavy transformer equipment requires extensive swept-path simulations, axle weight distribution analysis, and coordinated infrastructure authority permits.'
   },
   {
     id: 'li-3',
