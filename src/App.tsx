@@ -48,7 +48,7 @@ function Home() {
           <Link className="sector-feature" to="/works/solar"><img src={solar} alt="Solar infrastructure"/><div><span>01</span><h3>Solar</h3><p>Plant infrastructure, electrical balance-of-plant and power evacuation.</p></div></Link>
           <Link className="sector-feature sector-feature--wind" to="/works/windmill"><img src={wind} alt="Wind turbines"/><div><span>02</span><h3>Wind</h3><p>Electrical packages, site interfaces and movement of turbine components.</p></div></Link>
           <Link className="sector-feature sector-feature--transmission" to="/works/transmission"><img src={transmission} alt="Power transmission infrastructure"/><div><span>03</span><h3>Transmissions</h3><p>High-voltage lines, substation interties and grid evacuation engineering.</p></div></Link>
-          <Link className="sector-feature sector-feature--highways" to="/works/highways"><img src={transmission} alt="Highway corridor and heavy transit"/><div><span>04</span><h3>Highway Works</h3><p>Highway corridor transit, modular haulage and route engineering.</p></div></Link>
+          <Link className="sector-feature sector-feature--highways" to="/works/highways"><img src={transmission} alt="Infrastructure corridor and heavy transit"/><div><span>04</span><h3>Infrastructure Works</h3><p>Infrastructure corridor transit, modular haulage and route engineering.</p></div></Link>
         </div>
       </div>
     </section>
@@ -142,7 +142,7 @@ function Works() {
 
 function Work() {
   const {slug}=useParams();
-  const resolvedSlug = slug === 'transmission' ? 'highways' : slug;
+  const resolvedSlug = slug === 'transmission' ? 'infrastructure' : slug;
   const work=works.find(w=>w.slug===resolvedSlug)??works[0];
   const WorkIcon = work.slug === 'solar' ? SunMedium : work.slug === 'windmill' ? Wind : work.slug === 'transmission' ? Zap : Truck;
   return <Page type="work-detail" title={work.title} lead={work.short} image={work.image}>
