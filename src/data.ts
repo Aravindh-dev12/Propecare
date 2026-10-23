@@ -9,11 +9,11 @@ export const works=[
   slug:'solar',
   category:'SOLAR / GENERATION',
   title:'Solar Projects',
-  short:'Solar EPC support, electrical balance-of-plant and grid-facing infrastructure for utility, commercial and industrial assets.',
+  short:'Solar MVP support, electrical balance-of-plant and grid-facing infrastructure for utility, commercial and industrial assets.',
   headline:'Build the plant with the grid in mind.',
   description:'Solar delivery is not only a module-and-structure exercise. It depends on site conditions, DC and AC systems, protection, evacuation, testing, documentation and the operating context around the plant.',
   image:'https://images.pexels.com/photos/15663101/pexels-photo-15663101/free-photo-of-solar-panel-field.jpeg?auto=compress&cs=tinysrgb&w=2200',
-  bullets:['Site and EPC scope coordination','DC / AC electrical infrastructure','Power evacuation interfaces','HT, protection and metering coordination','Testing, documentation and handover'],
+  bullets:['Site and MVP scope coordination','DC / AC electrical infrastructure','Power evacuation interfaces','HT, protection and metering coordination','Testing, documentation and handover'],
   details:['Translate drawings and site constraints into an executable package.','Coordinate electrical systems around the generation block and balance-of-plant.','Keep plant output connected to the receiving infrastructure and schedule.','Align equipment, protection, cable and grid-interface requirements.','Build evidence into construction and commissioning instead of after it.'],
   steps:['Review site, drawings and delivery scope','Coordinate procurement and construction interfaces','Inspect, test and resolve punch points','Compile handover evidence'],
   stepDetails:['Confirm access, layout, quantities, interfaces and milestones.','Keep contractors and material readiness aligned to the work sequence.','Verify installation quality and functional readiness.','Close documentation gaps before the package is considered complete.'],
@@ -26,7 +26,7 @@ export const works=[
       client:'Utility Clean Energy IPP Developer',
       location:'Thuraiyur, Tiruchirappalli District, Tamil Nadu',
       status:'Commissioned & Energised',
-      tag:'FLAGSHIP UTILITY EPC',
+      tag:'FLAGSHIP UTILITY MVP',
       scope:'Turnkey civil balance-of-plant, pile foundation drilling & casting, mounting structure assembly, tracker alignment, DC array cabling, inverter station integration, and power evacuation to grid substation.',
       image:'/projects/solar/solar1/DJI_0028.JPG',
       stat:'Utility Scale Generation',
@@ -195,7 +195,7 @@ export const works=[
       client:'Clean Energy IPP / Power Producer',
       location:'Tamil Nadu, India',
       status:'Operational Handover',
-      tag:'GROUND-MOUNT EPC',
+      tag:'GROUND-MOUNT MVP',
       scope:'Civil balance-of-plant, pile ramming & structure alignment, tracker calibration, 33kV internal collection system, inverter stations, and transformer yard interface.',
       image:'/projects/solar/solar2/DJI_0127.JPG',
       stat:'Utility Scale Ground Mount',
@@ -320,11 +320,11 @@ export const works=[
   title:'Wind Projects',
   short:'Electrical infrastructure, balance-of-plant coordination and site interfaces for wind-energy projects.',
   headline:'Wind projects combine power infrastructure with difficult physical access.',
-  description:'Wind sites add long-distance access, turbine-component logistics, construction sequencing and electrical collection or evacuation interfaces. Propercare separates those constraints, then reconnects them into one delivery sequence.',
+  description:'Wind sites add long-distance access, turbine-component transmission, construction sequencing and electrical collection or evacuation interfaces. Propercare separates those constraints, then reconnects them into one delivery sequence.',
   image:'/images/indian-windmill.png',
   bullets:['Wind-farm electrical works','Collection and pooling systems','Evacuation infrastructure','Turbine-site interface coordination','Testing and commissioning'],
   details:['Coordinate site electrical packages around turbine and civil interfaces.','Support collection and pooling infrastructure from turbine strings toward the grid interface.','Plan the receiving infrastructure with protection and energisation in view.','Make access, delivery windows and site readiness visible to the project team.','Close the loop through inspection, testing and commissioning records.'],
-  steps:['Map turbine, electrical and logistics interfaces','Prepare package sequence and site readiness','Execute electrical and support works','Test, energise and hand over'],
+  steps:['Map turbine, electrical and transmission interfaces','Prepare package sequence and site readiness','Execute electrical and support works','Test, energise and hand over'],
   stepDetails:['Identify dependencies between turbine deliveries, civil works and electrical packages.','Align materials, crews, access and work fronts.','Control construction against the approved sequence.','Compile test results and readiness evidence for the next stage.'],
   projects:[]
  },
@@ -348,16 +348,16 @@ export const works=[
   title:'Highway Works',
   short:'Route-engineered transit, highway corridor clearance, and multi-axle modular movement for critical infrastructure.',
   headline:'Engineered highway transit and corridor execution for mission-critical infrastructure.',
-  description:'Highway corridors and access roadways are vital arteries for heavy industrial and renewable movement. Propercare delivers highway transit engineering, heavy multi-axle modular haulage, intersection modifications, bridge load distribution, and end-to-end corridor logistics.',
-  image:transport,
-  bullets:['Highway corridor survey and route engineering','Multi-axle hydraulic modular transport','Bridge capacity & bypass assessment','Junction turn clearance & road widening','Escorted transit and zero-incident delivery'],
+  description:'Highway corridors and access roadways are vital arteries for heavy industrial and renewable movement. Propercare delivers highway transit engineering, heavy multi-axle modular haulage, intersection modifications, bridge load distribution, and end-to-end corridor transmission.',
+  image:transmission,
+  bullets:['Highway corridor survey and route engineering','Multi-axle hydraulic modular transmission','Bridge capacity & bypass assessment','Junction turn clearance & road widening','Escorted transit and zero-incident delivery'],
   details:['Comprehensive corridor analysis, overhead wire elevations and turning geometry.','Heavy payload movement utilizing synchronized hydraulic multi-axle trailers.','Structural load distribution calculations and bridge bypass coordination.','Temporary civil works, turning radius modifications and approach road creation.','Live drone tracking, pilot vehicles, and safe delivery sign-off.'],
   steps:['Corridor survey & route validation','Trailer configuration & axle load engineering','Highway transit with drone convoy tracking','Site approach delivery and precision handover'],
   stepDetails:['Analyze turning radii, vertical clearances, bridge structural ratings and permits.','Mobilize multi-axle modular units matching cargo weight and center of gravity.','Execute movement under escorted controls with continuous aerial drone monitoring.','Safely navigate site gates, bay positioning and cargo tie-down release.'],
   projects:[
     {
-      id:'transport-1',
-      title:'Highway Project 1 - Heavy ODC & Multimodal Logistics',
+      id:'transmission-1',
+      title:'Highway Project 1 - Heavy ODC & Multimodal Transmission',
       name:'Project Highway Transit 1',
       capacity:'Heavy ODC Payload',
       client:'State Transmission Corporation / Heavy Electrical OEM',
@@ -378,13 +378,13 @@ export const works=[
       media:[
         {type:'image',category:'aerial',tag:'CONVOY TRANSIT',url:'/projects/transport/transport1/DJI_0078.JPG',title:'Drone High-Angle View - Hydraulic Modular Trailer in Transit (DJI_0078)'},
         {type:'image',category:'aerial',tag:'HIGHWAY CORRIDOR',url:'/projects/transport/transport1/DJI_0079.JPG',title:'Aerial Perspective of Escorted Heavy Haulage Convoy (DJI_0079)'},
-        {type:'image',category:'logistics',tag:'JUNCTION CLEARANCE',url:'/projects/transport/transport1/DJI_0092.JPG',title:'Highway Intersection Turning Radius & Road Clearance (DJI_0092)'},
-        {type:'image',category:'logistics',tag:'ELEVATED TRANSIT',url:'/projects/transport/transport1/DJI_0098.JPG',title:'Bridge Structure Transit & Axle Load Distribution (DJI_0098)'},
-        {type:'image',category:'logistics',tag:'RURAL CORRIDOR',url:'/projects/transport/transport1/DJI_0099.JPG',title:'Rural Access Road Navigation & Pilot Escort Alignment (DJI_0099)'},
-        {type:'image',category:'logistics',tag:'HYDRAULIC STABILITY',url:'/projects/transport/transport1/DJI_0101.JPG',title:'Trailer Hydraulic Bed Stability & Ground Clearance Inspection (DJI_0101)'},
-        {type:'image',category:'transport',tag:'SUBSTATION APPROACH',url:'/projects/transport/transport1/DJI_0110.JPG',title:'Site Approach Road Arrival & Final Turn Execution (DJI_0110)'},
-        {type:'image',category:'transport',tag:'BAY POSITIONING',url:'/projects/transport/transport1/DJI_0120.JPG',title:'Substation Bay Delivery & Precision Positioning (DJI_0120)'},
-        {type:'image',category:'transport',tag:'COMPLETION & HANDOVER',url:'/projects/transport/transport1/DJI_0126.JPG',title:'Final Cargo Tie-Down Release & Handover Sign-Off (DJI_0126)'}
+        {type:'image',category:'transmission',tag:'JUNCTION CLEARANCE',url:'/projects/transport/transport1/DJI_0092.JPG',title:'Highway Intersection Turning Radius & Road Clearance (DJI_0092)'},
+        {type:'image',category:'transmission',tag:'ELEVATED TRANSIT',url:'/projects/transport/transport1/DJI_0098.JPG',title:'Bridge Structure Transit & Axle Load Distribution (DJI_0098)'},
+        {type:'image',category:'transmission',tag:'RURAL CORRIDOR',url:'/projects/transport/transport1/DJI_0099.JPG',title:'Rural Access Road Navigation & Pilot Escort Alignment (DJI_0099)'},
+        {type:'image',category:'transmission',tag:'HYDRAULIC STABILITY',url:'/projects/transport/transport1/DJI_0101.JPG',title:'Trailer Hydraulic Bed Stability & Ground Clearance Inspection (DJI_0101)'},
+        {type:'image',category:'transmission',tag:'SUBSTATION APPROACH',url:'/projects/transport/transport1/DJI_0110.JPG',title:'Site Approach Road Arrival & Final Turn Execution (DJI_0110)'},
+        {type:'image',category:'transmission',tag:'BAY POSITIONING',url:'/projects/transport/transport1/DJI_0120.JPG',title:'Substation Bay Delivery & Precision Positioning (DJI_0120)'},
+        {type:'image',category:'transmission',tag:'COMPLETION & HANDOVER',url:'/projects/transport/transport1/DJI_0126.JPG',title:'Final Cargo Tie-Down Release & Handover Sign-Off (DJI_0126)'}
       ],
       videos:[
         {
@@ -482,7 +482,7 @@ export const works=[
  }
 ];
 export const services=[
- {slug:'epc',code:'EPC',title:'EPC & EBoP',lead:'Integrated project support from engineering scope through construction and handover.',headline:'Make engineering intent executable at site.',description:'A coordinated package for renewable infrastructure where engineering, procurement, construction, quality and handover have to move as one sequence.',short:'Engineering, procurement and construction packages coordinated around site realities and handover requirements.',image:works[0].image,why:'Renewable EPC work creates risk at the interfaces between design, materials, contractors and site execution.',outcome:'Propercare focuses on making responsibilities, readiness and acceptance criteria visible before field activity accelerates.',checkpoints:[['SCOPE','Drawings, quantities, responsibilities and acceptance criteria are clear.'],['MATERIAL','Critical equipment and materials are aligned with the construction sequence.'],['SITE','Work fronts, access, safety controls and contractor interfaces are ready.'],['CLOSE','Quality records, testing and punch-list closure support handover.']]},
+ {slug:'epc',code:'MVP',title:'MVP & EBoP',lead:'Integrated project support from engineering scope through construction and handover.',headline:'Make engineering intent executable at site.',description:'A coordinated package for renewable infrastructure where engineering, procurement, construction, quality and handover have to move as one sequence.',short:'Engineering, procurement and construction packages coordinated around site realities and handover requirements.',image:works[0].image,why:'Renewable MVP work creates risk at the interfaces between design, materials, contractors and site execution.',outcome:'Propercare focuses on making responsibilities, readiness and acceptance criteria visible before field activity accelerates.',checkpoints:[['SCOPE','Drawings, quantities, responsibilities and acceptance criteria are clear.'],['MATERIAL','Critical equipment and materials are aligned with the construction sequence.'],['SITE','Work fronts, access, safety controls and contractor interfaces are ready.'],['CLOSE','Quality records, testing and punch-list closure support handover.']]},
  {slug:'evacuation',code:'EVACUATION',title:'Power Evacuation',lead:'Plant-to-grid infrastructure coordinated around collection, transformation, protection and energisation.',headline:'The generation plant is only useful when the power can leave it.',description:'Power evacuation packages connect the generating asset to the receiving network through cables, transformers, switchgear, protection, metering and associated interfaces.',short:'Collection, transformation and grid-interface infrastructure from plant to receiving point.',image:transmission,why:'Evacuation systems cross electrical, civil, protection and grid-approval boundaries.',outcome:'We organise the package around those dependencies so construction and commissioning are sequenced toward energisation.',checkpoints:[['COLLECTION','Cable routes, terminations and collection interfaces are defined.'],['TRANSFORM','Transformer and switchgear interfaces are coordinated.'],['PROTECTION','Protection, metering and control requirements are tracked.'],['ENERGISE','Tests, records and readiness checks support energisation.']]},
  {slug:'substations',code:'SUBSTATIONS',title:'Substations & Switchyards',lead:'Primary and secondary systems coordinated for controlled power transfer, protection and metering.',headline:'A substation is a system of interfaces, not a single equipment list.',description:'Delivery requires coordination across layout, primary equipment, control, protection, earthing, cabling, interlocking, testing and as-built documentation.',short:'Primary and secondary systems for controlled power transfer, protection and metering.',image:grid,why:'Substation packages become difficult when primary, secondary and commissioning workstreams drift apart.',outcome:'Our delivery view keeps equipment, wiring, testing and documentation moving toward the same energisation milestone.',checkpoints:[['PRIMARY','Equipment layout, clearances and interfaces are aligned.'],['SECONDARY','Control, protection, metering and interlocking are coordinated.'],['TEST','Inspection and functional test sequences are agreed.'],['HANDOVER','As-built records and test evidence are complete.']]},
  {slug:'testing',code:'TESTING',title:'Testing & Commissioning',lead:'Inspection, testing, functional verification and handover support before an asset enters operation.',headline:'Commissioning is where the project proves itself.',description:'Testing turns installed equipment into an operating system. It needs approved methods, traceable records, issue control and clear readiness decisions.',short:'Inspection, testing, functional verification and synchronisation support before handover.',image:'https://images.pexels.com/photos/33689077/pexels-photo-33689077/free-photo-of-engineer-inspects-power-transmission-tower-outdoors.jpeg?auto=compress&cs=tinysrgb&w=2200',why:'A technically complete installation can still be operationally unready if testing evidence and interfaces are incomplete.',outcome:'We help structure inspection, testing, defect close-out and readiness documentation around the energisation sequence.',checkpoints:[['PLAN','Test methods, instruments, responsibilities and prerequisites are known.'],['VERIFY','Equipment, cables, protection and interlocks are checked.'],['CLOSE','Defects and punch points are tracked to resolution.'],['PROVE','Test records and readiness evidence support handover.']]}
@@ -495,35 +495,35 @@ export const sectors=[
 ];
 export const clients=[
  {name:'Renewable developers & asset owners',need:'Need predictable progress, visible risk and confidence that site packages are ready when required.',value:'Visibility + accountability'},
- {name:'EPC contractors',need:'Need execution support that fits an existing engineering package without creating new coordination gaps.',value:'Interface discipline'},
- {name:'Wind & solar OEM ecosystems',need:'Need site, electrical and logistics activities to respect equipment and delivery requirements.',value:'Technical coordination'},
+ {name:'MVP contractors',need:'Need execution support that fits an existing engineering package without creating new coordination gaps.',value:'Interface discipline'},
+ {name:'Wind & solar OEM ecosystems',need:'Need site, electrical and transmission activities to respect equipment and delivery requirements.',value:'Technical coordination'},
  {name:'Industrial project teams',need:'Need heavy equipment and infrastructure moved safely through constrained routes and sites.',value:'Route-led planning'},
  {name:'Power & grid stakeholders',need:'Need protection, testing, documentation and energisation readiness to converge.',value:'Commissioning readiness'},
  {name:'Operations & maintenance teams',need:'Need clear records and practical handover information after construction activity ends.',value:'Lifecycle continuity'}
 ];
 export const articles=[
- {slug:'india-renewable-buildout-2026',tag:'MARKET',date:'05 OCT 2026',readTime:'6 MIN READ',title:'India’s renewable buildout is accelerating - but execution is becoming the real differentiator',text:'India’s renewable capacity continues to expand at record pace. For EPC and infrastructure teams, the harder question is no longer whether projects will be built, but whether land, transmission, procurement and commissioning can keep up.',image:solar,source:'https://mnre.gov.in/en/physical-progress/',sourceName:'MNRE - Physical Achievements',content:[['The scale is moving quickly','MNRE reported 168.04 GW of cumulative solar capacity and 58.52 GW of wind capacity as of 31 August 2026. Solar additions during April-August 2026 alone were 17.78 GW, while wind additions reached 2.43 GW.'],['Execution is now a systems problem','The strongest project teams treat engineering, procurement, construction, evacuation and commissioning as connected workstreams. A delay in one interface can hold back an otherwise complete plant.'],['What this means for EPC teams','Project plans should identify material readiness, access, grid interfaces, protection requirements, testing prerequisites and documentation milestones before mobilisation. The objective is predictable progress, not activity for activity’s sake.']]},
- {slug:'solar-market-1h-2026',tag:'SOLAR',date:'05 OCT 2026',readTime:'5 MIN READ',title:'27 GW in six months: what India’s 1H 2026 solar record means for project execution',text:'India added a record 27 GW of solar in the first half of 2026. The next competitive advantage is turning awarded capacity into commissioned, grid-ready assets without losing control of interfaces.',image:solar,source:'https://www.mercomindia.com/india-adds-record-27-gw-of-solar-capacity-in-first-half-of-2026',sourceName:'Mercom India Research',content:[['A record first half','Mercom India reported 27 GW of solar capacity additions in 1H 2026, 49% higher than the same period in 2025. Cumulative solar capacity reached about 165 GW by June 2026.'],['The pipeline is not the same as completed infrastructure','Land, transmission connectivity, equipment availability, PPAs and approvals still determine whether projects move from awarded capacity to energised assets. Large-scale projects represented 83% of cumulative solar capacity at mid-year.'],['The EPC implication','The execution plan should connect DC works, AC collection, transformers, switchgear, evacuation, protection, testing and handover rather than managing them as isolated packages.']]},
+ {slug:'india-renewable-buildout-2026',tag:'MARKET',date:'05 OCT 2026',readTime:'6 MIN READ',title:'India’s renewable buildout is accelerating - but execution is becoming the real differentiator',text:'India’s renewable capacity continues to expand at record pace. For MVP and infrastructure teams, the harder question is no longer whether projects will be built, but whether land, transmission, procurement and commissioning can keep up.',image:solar,source:'https://mnre.gov.in/en/physical-progress/',sourceName:'MNRE - Physical Achievements',content:[['The scale is moving quickly','MNRE reported 168.04 GW of cumulative solar capacity and 58.52 GW of wind capacity as of 31 August 2026. Solar additions during April-August 2026 alone were 17.78 GW, while wind additions reached 2.43 GW.'],['Execution is now a systems problem','The strongest project teams treat engineering, procurement, construction, evacuation and commissioning as connected workstreams. A delay in one interface can hold back an otherwise complete plant.'],['What this means for MVP teams','Project plans should identify material readiness, access, grid interfaces, protection requirements, testing prerequisites and documentation milestones before mobilisation. The objective is predictable progress, not activity for activity’s sake.']]},
+ {slug:'solar-market-1h-2026',tag:'SOLAR',date:'05 OCT 2026',readTime:'5 MIN READ',title:'27 GW in six months: what India’s 1H 2026 solar record means for project execution',text:'India added a record 27 GW of solar in the first half of 2026. The next competitive advantage is turning awarded capacity into commissioned, grid-ready assets without losing control of interfaces.',image:solar,source:'https://www.mercomindia.com/india-adds-record-27-gw-of-solar-capacity-in-first-half-of-2026',sourceName:'Mercom India Research',content:[['A record first half','Mercom India reported 27 GW of solar capacity additions in 1H 2026, 49% higher than the same period in 2025. Cumulative solar capacity reached about 165 GW by June 2026.'],['The pipeline is not the same as completed infrastructure','Land, transmission connectivity, equipment availability, PPAs and approvals still determine whether projects move from awarded capacity to energised assets. Large-scale projects represented 83% of cumulative solar capacity at mid-year.'],['The MVP implication','The execution plan should connect DC works, AC collection, transformers, switchgear, evacuation, protection, testing and handover rather than managing them as isolated packages.']]},
  {slug:'tamil-nadu-open-access',tag:'TAMIL NADU',date:'05 OCT 2026',readTime:'5 MIN READ',title:'Tamil Nadu’s solar open-access market: why execution discipline matters',text:'Tamil Nadu remains an important market for renewable power procurement. For C&I customers and project developers, commercial opportunity increasingly depends on predictable implementation and grid readiness.',image:grid,source:'https://www.mercomindia.com/solar-and-battery-storage-lead-ci-shift-toward-clean-power-procurement',sourceName:'Mercom India - C&I Research',content:[['A strong C&I use case','Mercom reported approximately 2.7 GW of solar open-access capacity in Tamil Nadu as of September 2025, underlining the state’s importance in the segment.'],['Open access creates more interfaces','Project success depends on generation, scheduling, evacuation, approvals, metering and the receiving consumer or network. These interfaces need to be planned together.'],['Why local execution matters','Site access, contractor coordination, inspection and documentation can materially affect the commissioning timeline. A field partner should make these dependencies visible early and keep evidence aligned with the final energisation sequence.']]},
- {slug:'solar-plus-storage',tag:'STORAGE',date:'05 OCT 2026',readTime:'5 MIN READ',title:'Why solar projects are becoming storage-and-grid projects',text:'Battery storage is moving closer to the centre of renewable project planning as developers and policymakers focus on grid flexibility and reliability.',image:transmission,source:'https://mnre.gov.in/en/whats-new/',sourceName:'MNRE - What’s New',content:[['The policy signal is clear','MNRE’s current updates include viability-gap-funding measures for battery energy storage and an advisory on co-locating storage with solar projects to improve grid stability and cost efficiency.'],['Storage changes the execution sequence','A solar-plus-storage project introduces additional equipment, protection, controls, cabling, testing and operational interfaces. These should be reflected in engineering and commissioning plans from the beginning.'],['The practical takeaway','EPC teams should define where storage connects, how protection and controls interact, what testing proves readiness and which documents are required before commercial operation.']]},
- {slug:'wind-logistics-route-intelligence',tag:'WIND',date:'05 OCT 2026',readTime:'6 MIN READ',title:'Wind logistics starts with route intelligence, not a truck',text:'As turbine components become larger and routes more constrained, safe wind logistics depends on understanding the complete journey before selecting the movement configuration.',image:wind,source:'https://www.bws.net/solutions/transport/wind-turbine-transport',sourceName:'Blue Water Shipping - Wind Turbine Transport',content:[['Start with the cargo','Blade length, nacelle dimensions, tower sections, weight, lifting points and handling limits define the movement problem. Cargo data should be complete before transport equipment is committed.'],['Then engineer the route','Road geometry, bridges, clearances, turning radii, gradients, utilities, temporary works and site approach can change the feasibility of a movement. Route surveys convert assumptions into decisions.'],['Finally connect route to site readiness','Arrival is only successful when the receiving site can accept, unload, stage and move the component to its final position. Transport planning should therefore sit alongside civil and construction sequencing.']]},
- {slug:'odc-cargo-first',tag:'LOGISTICS',date:'05 OCT 2026',readTime:'5 MIN READ',title:'ODC planning: cargo first, equipment second',text:'Oversized and heavy cargo movements become more predictable when the cargo characteristics drive the transport configuration rather than the other way around.',image:transport,source:'https://www.ntclogistics.in/renewable-logistics/',sourceName:'NTC Logistics - Renewable Logistics',content:[['The cargo defines the problem','Dimensions, gross weight, centre of gravity, lifting points, fragility and unloading requirements determine what equipment and route controls are appropriate.'],['Customisation can be necessary','Renewable logistics providers increasingly describe specialised trailers and project-specific configurations because standard fleet assumptions do not always fit long blades, heavy equipment or constrained access.'],['Treat the final kilometres as engineering','A route can be technically passable yet operationally difficult at the site gate. Arrival geometry, laydown space, lifting access and timing need the same attention as the public-road journey.']]},
- {slug:'commissioning-as-proof',tag:'COMMISSIONING',date:'05 OCT 2026',readTime:'5 MIN READ',title:'Commissioning is not paperwork - it is the project proving itself',text:'A technically installed asset is not automatically an operationally ready asset. Testing and commissioning turn installation into evidence that the system can operate as intended.',image:grid,source:'https://www.mercomindia.com/predictable-execution-by-solar-epcs-key-to-long-term-value-creation-interview',sourceName:'Mercom India - EPC Execution',content:[['Installation and readiness are different states','Equipment can be physically installed while protection settings, cable tests, interlocks, documentation or interface approvals remain incomplete.'],['Build the test sequence early','Testing should be linked to construction completion, prerequisites, instruments, responsibilities and issue closure. This prevents the commissioning team from discovering basic readiness gaps at the end.'],['Handover should contain evidence','A strong close-out package includes test results, as-built information, punch-list status and clear acceptance records. The document trail should reflect what was actually proven in the field.']]},
- {slug:'what-good-renewable-website-content-does',tag:'INSIGHT',date:'05 OCT 2026',readTime:'4 MIN READ',title:'What the best renewable infrastructure websites communicate differently',text:'Our research across logistics, EPC, OEM and renewable-energy companies revealed a consistent pattern: the strongest sites explain how work gets done, not just what services exist.',image:grid,source:'https://nabrostransport.com/',sourceName:'Industry reference set',content:[['Capability is organised around customer decisions','Specialists such as Nabros and NTC separate wind, heavy transport and renewable logistics into understandable packages. That makes complex services easier to discover.'],['Project stories create proof','Case-study structures from logistics and energy companies show the value of explaining the challenge, engineering approach, execution and outcome rather than publishing generic claims.'],['Education builds trust before the enquiry','Useful articles can answer questions about route surveys, EPC scope, commissioning, grid interfaces and project readiness before a customer ever fills out a form. That is the direction of Propercare’s new content strategy.']]}
+ {slug:'solar-plus-storage',tag:'STORAGE',date:'05 OCT 2026',readTime:'5 MIN READ',title:'Why solar projects are becoming storage-and-grid projects',text:'Battery storage is moving closer to the centre of renewable project planning as developers and policymakers focus on grid flexibility and reliability.',image:transmission,source:'https://mnre.gov.in/en/whats-new/',sourceName:'MNRE - What’s New',content:[['The policy signal is clear','MNRE’s current updates include viability-gap-funding measures for battery energy storage and an advisory on co-locating storage with solar projects to improve grid stability and cost efficiency.'],['Storage changes the execution sequence','A solar-plus-storage project introduces additional equipment, protection, controls, cabling, testing and operational interfaces. These should be reflected in engineering and commissioning plans from the beginning.'],['The practical takeaway','MVP teams should define where storage connects, how protection and controls interact, what testing proves readiness and which documents are required before commercial operation.']]},
+ {slug:'wind-logistics-route-intelligence',tag:'WIND',date:'05 OCT 2026',readTime:'6 MIN READ',title:'Wind transmission planning starts with route intelligence',text:'As turbine components become larger and routes more constrained, safe wind transmission planning depends on understanding the complete route and site requirements.',image:wind,source:'https://www.bws.net/solutions/transport/wind-turbine-transport',sourceName:'Blue Water Shipping - Wind Turbine Transmission',content:[['Start with the cargo','Blade length, nacelle dimensions, tower sections, weight, lifting points and handling limits define the movement problem. Cargo data should be complete before transmission equipment is committed.'],['Then engineer the route','Road geometry, bridges, clearances, turning radii, gradients, utilities, temporary works and site approach can change the feasibility of a movement. Route surveys convert assumptions into decisions.'],['Finally connect route to site readiness','Arrival is only successful when the receiving site can accept, unload, stage and move the component to its final position. Transmission planning should therefore sit alongside civil and construction sequencing.']]},
+ {slug:'odc-cargo-first',tag:'TRANSMISSION',date:'05 OCT 2026',readTime:'5 MIN READ',title:'ODC planning: cargo first, equipment second',text:'Oversized and heavy cargo movements become more predictable when the cargo characteristics drive the project configuration rather than the other way around.',image:transmission,source:'https://www.ntclogistics.in/renewable-logistics/',sourceName:'NTC - Renewable Transmission',content:[['The cargo defines the problem','Dimensions, gross weight, centre of gravity, lifting points, fragility and unloading requirements determine what equipment and route controls are appropriate.'],['Customisation can be necessary','Renewable transmission providers increasingly describe specialised trailers and project-specific configurations because standard fleet assumptions do not always fit long blades, heavy equipment or constrained access.'],['Treat the final kilometres as engineering','A route can be technically passable yet operationally difficult at the site gate. Arrival geometry, laydown space, lifting access and timing need the same attention as the public-road journey.']]},
+ {slug:'commissioning-as-proof',tag:'COMMISSIONING',date:'05 OCT 2026',readTime:'5 MIN READ',title:'Commissioning is not paperwork - it is the project proving itself',text:'A technically installed asset is not automatically an operationally ready asset. Testing and commissioning turn installation into evidence that the system can operate as intended.',image:grid,source:'https://www.mercomindia.com/predictable-execution-by-solar-epcs-key-to-long-term-value-creation-interview',sourceName:'Mercom India - MVP Execution',content:[['Installation and readiness are different states','Equipment can be physically installed while protection settings, cable tests, interlocks, documentation or interface approvals remain incomplete.'],['Build the test sequence early','Testing should be linked to construction completion, prerequisites, instruments, responsibilities and issue closure. This prevents the commissioning team from discovering basic readiness gaps at the end.'],['Handover should contain evidence','A strong close-out package includes test results, as-built information, punch-list status and clear acceptance records. The document trail should reflect what was actually proven in the field.']]},
+ {slug:'what-good-renewable-website-content-does',tag:'INSIGHT',date:'05 OCT 2026',readTime:'4 MIN READ',title:'What the best renewable infrastructure websites communicate differently',text:'Our research across transmission, MVP, OEM and renewable-energy companies revealed a consistent pattern: the strongest sites explain how work gets done, not just what services exist.',image:grid,source:'https://nabrostransport.com/',sourceName:'Industry reference set',content:[['Capability is organised around customer decisions','Specialists such as Nabros and NTC separate wind, heavy transmission and renewable transmission into understandable packages. That makes complex services easier to discover.'],['Project stories create proof','Case-study structures from transmission and energy companies show the value of explaining the challenge, engineering approach, execution and outcome rather than publishing generic claims.'],['Education builds trust before the enquiry','Useful articles can answer questions about route surveys, MVP scope, commissioning, grid interfaces and project readiness before a customer ever fills out a form. That is the direction of Propercare’s new content strategy.']]}
 ];
 export const research=[
- {name:'Nabros Transport',category:'ODC / WIND LOGISTICS',learning:'A strong benchmark for capability-led navigation: wind transport, heavy & specialised transport, route survey, multimodal movement, warehousing, safety and case studies.',url:'https://nabrostransport.com/'},
- {name:'Terravolt Renewables',category:'WIND SERVICES',learning:'Useful service structure around factory-to-site WTG transport, yard management, intercarting and crane packages.',url:'https://terravolt.in/services/'},
- {name:'Sangreen Future Renewables',category:'RENEWABLE LOGISTICS',learning:'Reference for route surveys, heavy-lift planning and turnkey wind-project logistics positioning.',url:'https://sangreenrenewables.com/logistics/'},
+ {name:'Nabros Transmission',category:'ODC / WIND TRANSMISSION',learning:'A strong benchmark for capability-led navigation: wind transmission, heavy & specialised transmission, route survey, multimodal movement, warehousing, safety and case studies.',url:'https://nabrostransport.com/'},
+ {name:'Terravolt Renewables',category:'WIND SERVICES',learning:'Useful service structure around factory-to-site WTG transmission, yard management, intercarting and crane packages.',url:'https://terravolt.in/services/'},
+ {name:'Sangreen Future Renewables',category:'RENEWABLE TRANSMISSION',learning:'Reference for route surveys, heavy-lift planning and turnkey wind-project transmission project planning.',url:'https://sangreenrenewables.com/logistics/'},
  {name:'DB Schenker',category:'PROJECT CASE STUDY',learning:'A useful global reference for presenting a difficult wind-blade movement as a measurable project story rather than a generic service claim.',url:'https://www.dbschenker.com/global/insights/news-and-stories/press-releases/wind-turbine-blades-india-1771614'},
- {name:'Blue Water Shipping',category:'GLOBAL WIND LOGISTICS',learning:'Strong example of explaining changing turbine sizes, OOG handling methods, Ro/Ro movements and project track record.',url:'https://www.bws.net/solutions/transport/wind-turbine-transport'},
- {name:'NTC Logistics',category:'RENEWABLE LOGISTICS',learning:'Benchmark for separating renewable logistics into wind, solar and hydro while connecting specialised fleet, project logistics and tracking.',url:'https://www.ntclogistics.in/renewable-logistics/'},
+ {name:'Blue Water Shipping',category:'GLOBAL WIND TRANSMISSION',learning:'Strong example of explaining changing turbine sizes, OOG handling methods, Ro/Ro movements and project track record.',url:'https://www.bws.net/solutions/transport/wind-turbine-transport'},
+ {name:'NTC Transmission',category:'RENEWABLE TRANSMISSION',learning:'Benchmark for separating renewable transmission into wind, solar and hydro while connecting specialised fleet, project transmission and tracking.',url:'https://www.ntclogistics.in/renewable-logistics/'},
  {name:'ReGen Powertech',category:'WIND TECHNOLOGY',learning:'Shows the value of explaining clean-energy expertise through products, project execution, engineering capability and news.',url:'https://www.regenpowertech.com/'},
  {name:'SWELECT Energy Systems',category:'SOLAR TECHNOLOGY',learning:'Useful product-led model covering PV modules, mounting structures, electrical BOS, pumps, packaged solar systems and storage.',url:'https://swelectes.com/'},
  {name:'Orient Green Power',category:'WIND POWER',learning:'Reference for communicating renewable generation assets as a business segment rather than only as a service.',url:'https://www.orientgreenpower.com/wind-power.asp'},
  {name:'Heliostrom',category:'CHENNAI SOLAR',learning:'Strong local conversion pattern: residential, commercial and industrial solar, site survey, system design, installation, testing and approvals.',url:'https://www.heliostrom.com/'},
- {name:'Ksquare Energy',category:'SOLAR EPC / LOCAL',learning:'Useful example of location-led solar discovery and broad service coverage across Indian markets.',url:'https://www.ksquareenergy.com/solar-company-in-chennai'},
- {name:'AceRenewTech',category:'SOLAR EPC / CHENNAI',learning:'Clear explanation of the EPC sequence: design, engineering and construction, with separate residential, C&I and utility-scale use cases.',url:'https://acerenewtech.com/blogs/solar-epc-companies-in-chennai/'},
+ {name:'Ksquare Energy',category:'SOLAR MVP / LOCAL',learning:'Useful example of location-led solar discovery and broad service coverage across Indian markets.',url:'https://www.ksquareenergy.com/solar-company-in-chennai'},
+ {name:'AceRenewTech',category:'SOLAR MVP / CHENNAI',learning:'Clear explanation of the MVP sequence: design, engineering and construction, with separate residential, C&I and utility-scale use cases.',url:'https://acerenewtech.com/blogs/solar-epc-companies-in-chennai/'},
  {name:'Tata Power Renewables',category:'NATIONAL RENEWABLES',learning:'Enterprise reference for presenting renewable energy alongside wider energy infrastructure, customer journeys and operational scale.',url:'https://www.tatapower.com/renewables'},
  {name:'Adani Green Energy',category:'UTILITY RENEWABLES',learning:'Useful benchmark for combining generation scale, sustainability, water stewardship, reporting and stakeholder communication.',url:'https://www.adanigreenenergy.com/'},
  {name:'L&T Green Energy',category:'ENGINEERING & INFRASTRUCTURE',learning:'Reference for positioning renewables within a larger engineering capability across solar, wind and infrastructure delivery.',url:'https://www.larsentoubro.com/green-energy'}
@@ -535,7 +535,7 @@ export const newsUpdates = [
     title: 'Propecare Completes Flagship Civil BOS & MMS Installation at Thuraiyur Solar Plant',
     date: '04 OCT 2026',
     tag: 'PROJECT MILESTONE',
-    category: 'Solar EPC',
+    category: 'Solar MVP',
     location: 'Thuraiyur, Tiruchirappalli, Tamil Nadu',
     summary: 'Our site engineering teams have achieved 100% completion of pile foundation casting, tracker table pitch calibration, and 33kV collection cabling at the Thuraiyur utility solar plant in Tiruchirappalli District.',
     highlights: [
@@ -551,9 +551,9 @@ export const newsUpdates = [
     title: '160-Tonne Generator Transformer Safely Delivered via 16-Axle Hydraulic Modular Trailer',
     date: '28 SEP 2026',
     tag: 'ODC HAULAGE',
-    category: 'Heavy Logistics',
+    category: 'Heavy Transmission',
     location: 'Ennore to Central Tamil Nadu Corridor',
-    summary: 'Propecare Logistics coordinated an escorted 380 km multimodal highway haulage for a critical 400kV generator transformer, negotiating bridge bypass engineering and zero-incident site gate offloading.',
+    summary: 'Propecare Transmission coordinated an escorted 380 km multimodal highway haulage for a critical 400kV generator transformer, negotiating bridge bypass engineering and zero-incident site gate offloading.',
     highlights: [
       '380 km escorted heavy haulage with highway authority clearances',
       '16-axle hydraulic modular trailer configuration deployed',
@@ -599,9 +599,9 @@ export const newsUpdates = [
     title: 'Propecare Expands Fleet of Specialized Hydraulic Modular Axles & Drone Survey Gear',
     date: '22 AUG 2026',
     tag: 'CAPABILITY EXPANSION',
-    category: 'Logistics Fleet',
+    category: 'Transmission Fleet',
     location: 'Karur Equipment Depot',
-    summary: 'Acquisition of additional heavy multi-axle modular transport lines and commercial DJI survey drones equipped with high-resolution multispectral cameras for ongoing solar and infrastructure projects.',
+    summary: 'Acquisition of additional heavy multi-axle modular transmission lines and commercial DJI survey drones equipped with high-resolution multispectral cameras for ongoing solar and infrastructure projects.',
     highlights: [
       'Goldhofer-compatible multi-axle modular trailer lines added',
       'Commercial RTK survey drones with centimeter-level precision',
@@ -620,7 +620,7 @@ export const socialChannels = [
     title: 'Propecare Infra Projects - Official Broadcasts',
     subscribers: '12.4K Subscribers',
     badge: 'OFFICIAL YOUTUBE',
-    desc: 'Watch full 4K drone sweeps across utility solar arrays, heavy ODC 16-axle transport convoys, and 33kV pooling substation energisation documentaries.',
+    desc: 'Watch full 4K drone sweeps across utility solar arrays, heavy ODC 16-axle transmission convoys, and 33kV pooling substation energisation documentaries.',
     url: 'https://www.youtube.com/@PropecareInfraProjects',
     actionText: 'Visit YouTube Channel',
     color: '#FF0000',
@@ -646,7 +646,7 @@ export const socialChannels = [
     title: 'Propecare Corporate & Engineering Feed',
     subscribers: '15.2K Network',
     badge: 'OFFICIAL LINKEDIN',
-    desc: 'Official project completion announcements, grid compliance whitepapers, heavy haulage route simulations, and renewable EPC milestones.',
+    desc: 'Official project completion announcements, grid compliance whitepapers, heavy haulage route simulations, and renewable MVP milestones.',
     url: 'https://www.linkedin.com/company/propecare-infra-projects',
     actionText: 'Connect on LinkedIn',
     color: '#0A66C2',
@@ -675,7 +675,7 @@ export const socialMediaPosts = [
     id: 'yt-2',
     type: 'youtube' as const,
     platform: 'youtube',
-    title: 'Heavy Logistics: Escorted 16-Axle Hydraulic Modular Trailer Moving 160T Transformer',
+    title: 'Heavy Transmission: Escorted 16-Axle Hydraulic Modular Trailer Moving 160T Transformer',
     subtitle: 'Propecare Infra Projects Official Channel',
     duration: '3:40',
     metrics: '9.8K views',
@@ -684,7 +684,7 @@ export const socialMediaPosts = [
     videoUrl: '/projects/transport/transport1/DJI_0106.MP4',
     url: 'https://www.youtube.com/@PropecareInfraProjects',
     tag: 'YOUTUBE 4K BROADCAST',
-    projectTitle: 'ODC Multimodal Transport',
+    projectTitle: 'ODC Multimodal Transmission',
     description: 'Documentation of the 380 km highway convoy transit, bypass route engineering, and zero-incident jacking of 160-tonne generator transformer onto foundation.'
   },
   {
@@ -748,7 +748,7 @@ export const socialMediaPosts = [
     videoUrl: '/projects/transport/transport1/DJI_0107.MP4',
     url: 'https://www.instagram.com/propecareinfra',
     tag: 'INSTAGRAM REEL',
-    projectTitle: 'Heavy Haulage Logistics',
+    projectTitle: 'Heavy Haulage Transmission',
     description: 'Moving 160 tonnes of power infrastructure across Tamil Nadu highways. Safety first, zero compromises. #HeavyHaulage #ODCTransport #LogisticsEngineering'
   },
   {
@@ -804,7 +804,7 @@ export const socialMediaPosts = [
     poster: '/projects/transport/transport1/DJI_0110.JPG',
     url: 'https://www.linkedin.com/company/propecare-infra-projects',
     tag: 'LINKEDIN ENGINEERING NOTE',
-    projectTitle: 'Specialised Logistics',
+    projectTitle: 'Specialised Transmission',
     description: 'Moving super-heavy transformer equipment requires extensive swept-path simulations, axle weight distribution analysis, and coordinated highway authority permits.'
   },
   {
