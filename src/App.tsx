@@ -32,7 +32,7 @@ function Home() {
     <section className="home-intro">
       <div className="wrap home-intro-grid">
         <div><span className="kicker">01 / PROPECARE</span><h2>Renewable infrastructure needs more than a contractor.</h2></div>
-        <div><p>It needs people who understand the interfaces between generation, electrical systems, access, transport, commissioning and the grid. Propercare brings those conversations together early so projects can move with fewer hand-offs.</p><Link className="text-link" to="/about" style={{display:'inline-flex',alignItems:'center',gap:'5px'}}><span>See how we work</span><ArrowRight size={14}/></Link></div>
+        <div><p>It needs people who understand the interfaces between generation, electrical systems, access, transmission works, commissioning and the grid. Propercare brings those conversations together early so projects can move with fewer hand-offs.</p><Link className="text-link" to="/about" style={{display:'inline-flex',alignItems:'center',gap:'5px'}}><span>See how we work</span><ArrowRight size={14}/></Link></div>
       </div>
       <div className="wrap home-stat-row">
         <div><b>01</b><span>Renewable infrastructure partner</span></div>
@@ -88,7 +88,7 @@ function About() {
 
 function Works() {
   return <Page type="work" title="Our Works" lead="Sector-led project capabilities, built around the conditions that make renewable infrastructure difficult." image={solar}>
-    <div className="works-intro"><div><span className="kicker">SECTOR MAP</span><h2>Different assets. Different risks. Different delivery logic.</h2></div><p>Solar has electrical and grid interfaces. Wind adds large components, access and heavy movement. Industrial transport is a route-engineering problem. Our pages separate these realities instead of treating them as one generic service.</p></div>
+    <div className="works-intro"><div><span className="kicker">SECTOR MAP</span><h2>Different assets. Different risks. Different delivery logic.</h2></div><p>Solar has electrical and grid interfaces. Wind adds large components, access and heavy movement. Transmission works require precise route planning and grid-interface engineering. Our pages separate these realities instead of treating them as one generic service.</p></div>
     <div className="works-stack">{works.map((w,i)=>{
       const WorkIcon = w.slug === 'solar' ? SunMedium : w.slug === 'windmill' ? Wind : w.slug === 'transmission' ? Zap : Truck;
       return <Link to={'/works/'+w.slug} className="work-row" key={w.slug}>
@@ -887,7 +887,7 @@ function Contact() {
 }
 
 function Page({type,title,lead,image,children}:{type:string;title:string;lead:string;image:string;children:ReactNode}) {
- return <><section className={'page-masthead page-masthead--'+type}><img className="page-masthead-image" src={image} alt=""/><div className="page-masthead-overlay"/><div className="wrap page-masthead-content"><span className="kicker">PROPECARE / {type.replace('-',' ').toUpperCase()}</span><h1>{title}</h1><p>{lead}</p><div className="masthead-actions"><Link className="button light" to="/contact">Discuss a project</Link><span>Solar · Wind · EPC · Logistics</span></div></div><div className="masthead-index"><span>{type==='about'?'01':type==='work'?'02':type.includes('service')?'03':type.includes('resources')?'04':type==='clients'?'05':type==='contact'?'06':'07'}</span><span>FIELD-READY INFRASTRUCTURE</span></div></section><main className={'page-body page-body--'+type}>{children}</main></>;
+ return <><section className={'page-masthead page-masthead--'+type}><img className="page-masthead-image" src={image} alt=""/><div className="page-masthead-overlay"/><div className="wrap page-masthead-content"><span className="kicker">PROPECARE / {type.replace('-',' ').toUpperCase()}</span><h1>{title}</h1><p>{lead}</p><div className="masthead-actions"><Link className="button light" to="/contact">Discuss a project</Link><span>Solar · Wind · Transmission Works · EPC</span></div></div><div className="masthead-index"><span>{type==='about'?'01':type==='work'?'02':type.includes('service')?'03':type.includes('resources')?'04':type==='clients'?'05':type==='contact'?'06':'07'}</span><span>FIELD-READY INFRASTRUCTURE</span></div></section><main className={'page-body page-body--'+type}>{children}</main></>;
 }
 
 export default function App(){
