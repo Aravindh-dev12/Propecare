@@ -33,8 +33,8 @@ const nav: NavItem[] = [
     label:'Resources',
     href:'/resources',
     children:[
-      {label:'Blogs',href:'/resources/blogs',icon:BookOpen},
       {label:'Media',href:'/resources/media',icon:Film},
+      {label:'Blogs',href:'/resources/blogs',icon:BookOpen},
       {label:'New Updates',href:'/resources/updates',icon:BellRing}
     ]
   },
