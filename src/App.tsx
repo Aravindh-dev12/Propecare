@@ -223,7 +223,6 @@ function ProjectDetail() {
     civil: 'Structure & BOS',
     ground: 'Ground Progress',
     electrical: 'Substation & Grid',
-    transmission: 'Heavy Haulage & Convoy',
     transmission: 'Transmission Operations'
   };
 
