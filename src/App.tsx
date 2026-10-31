@@ -570,126 +570,37 @@ function MediaPage() {
                   <div className="channel-icon-badge">
                     <ChannelIcon size={26} />
                   </div>
-                  <span className="channel-badge-pill">{sc.badge}</span>
+                  <span className="channel-badge-pill channel-coming-soon-badge">COMING SOON</span>
                 </div>
                 <h3 className="channel-name">{sc.name}</h3>
                 <span className="channel-handle">{sc.handle} · {sc.subscribers}</span>
                 <p className="channel-desc">{sc.desc}</p>
                 <div className="channel-footer">
                   <small className="channel-stats">{sc.stats}</small>
-                  <a href={sc.url} target="_blank" rel="noopener noreferrer" className="channel-btn">
-                    <span>{sc.actionText}</span>
-                    <ExternalLink size={15} />
-                  </a>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Official Channel Releases & Video Feed */}
-      <div className="channel-feed-section">
-        <div className="channel-feed-header">
-          <div>
-            <span className="kicker">OFFICIAL UPLOADS &amp; BROADCASTS</span>
-            <h2>Latest Features Across Our Channels</h2>
-            <p>Explore recent 4K video documentaries, site reels, and technical dispatches published on our YouTube, Instagram, and LinkedIn channels.</p>
-          </div>
-        </div>
-
-        {/* Channel Filter Toolbar */}
-        <div className="channel-filter-toolbar">
-          <div className="channel-filter-pills">
-            {tabOptions.map((tab) => {
-              const TabIcon = tab.icon;
-              return (
-                <button
-                  key={tab.id}
-                  type="button"
-                  className={`channel-filter-pill ${activeChannelTab === tab.id ? 'is-active' : ''}`}
-                  onClick={() => setActiveChannelTab(tab.id)}
-                >
-                  {TabIcon && <TabIcon size={16} />}
-                  <span>{tab.label}</span>
-                  <span className="channel-pill-count">{tab.count}</span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Grid of Official Channel Posts */}
-        <div className="unified-media-grid">
-          {displayedPosts.map((item: any, idx: number) => {
-            const isVideo = item.videoUrl;
-            const PlatformIcon = item.platform === 'youtube' ? Youtube : item.platform === 'instagram' ? Instagram : Linkedin;
-
-            return (
-              <div 
-                className={`unified-media-card card-platform-${item.platform}`} 
-                key={item.id || idx}
-                onClick={() => setLightboxItem(item)}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => e.key === 'Enter' && setLightboxItem(item)}
-              >
-                <div className="media-thumbnail-wrapper">
-                  <img
-                    src={item.poster}
-                    alt={item.title}
-                    loading="lazy"
-                    className="card-media-img"
-                  />
-
-                  {isVideo && (
-                    <div className="play-button-overlay">
-                      <Play size={24} fill="white" strokeWidth={0} />
-                    </div>
-                  )}
-
-                  {item.duration && (
-                    <span className="media-duration-tag">
-                      <Clock size={11} style={{display:'inline',verticalAlign:'middle',marginRight:'3px'}}/>
-                      {item.duration}
-                    </span>
-                  )}
-
-                  <span className={`media-badge badge-${item.platform}`}>
-                    <PlatformIcon size={12} />
-                    <span>{item.tag}</span>
+                  <span className="channel-btn channel-btn--coming-soon" aria-label={sc.name + ' coming soon'}>
+                    <span>Coming Soon</span>
+                    <Clock size={15} />
                   </span>
                 </div>
-
-                <div className="media-card-info">
-                  <div className="media-card-subtitle-row">
-                    <span className="media-card-project-pill">{item.subtitle}</span>
-                    {item.metrics && <span className="media-card-metrics-pill">{item.metrics}</span>}
-                  </div>
-                  <h4 className="media-card-title">{item.title}</h4>
-                  <p className="media-card-desc">{item.description}</p>
-                  <div className="media-card-footer">
-                    <span className="media-action-hint">
-                      <Play size={13} style={{display:'inline',verticalAlign:'middle',marginRight:'4px'}}/>
-                      Preview
-                    </span>
-                    <a 
-                      href={item.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="media-card-external-btn"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <span>Open on {item.platform === 'youtube' ? 'YouTube' : item.platform === 'instagram' ? 'Instagram' : 'LinkedIn'}</span>
-                      <ArrowRight size={13} />
-                    </a>
-                  </div>
-                </div>
               </div>
             );
           })}
         </div>
       </div>
+
+      {/* Coming Soon announcement for all official channels */}
+      <section className="channel-feed-section channel-coming-soon-section">
+        <div className="channel-coming-soon-content">
+          <span className="kicker">OFFICIAL UPLOADS &amp; BROADCASTS</span>
+          <h2>Something Exciting Is Coming Soon</h2>
+          <p>Our official YouTube videos, Instagram reels, and LinkedIn project updates are being prepared. Follow this page for the launch of all three channels.</p>
+          <div className="channel-coming-soon-platforms">
+            <span><Youtube size={17} /> YouTube</span>
+            <span><Instagram size={17} /> Instagram</span>
+            <span><Linkedin size={17} /> LinkedIn</span>
+          </div>
+        </div>
+      </section>
 
       {/* Fullscreen Modal Lightbox */}
       {lightboxItem && (
