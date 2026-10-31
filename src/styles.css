@@ -473,3 +473,66 @@ footer{background:var(--navy);color:#fff}.footer-visual{position:relative;min-he
   .media-category-pill{padding:7px 13px;font-size:12px;gap:6px}
   .category-pill-count{font-size:10px;padding:2px 6px}
 }
+
+
+/* Official social channels — Coming Soon state */
+.channel-coming-soon-badge {
+  letter-spacing: .09em;
+  font-weight: 800;
+}
+.channel-btn--coming-soon {
+  cursor: default;
+  justify-content: space-between;
+  opacity: .92;
+}
+.channel-coming-soon-section {
+  margin-top: 64px;
+  padding: 58px 32px;
+  border: 1px solid var(--line, #dce6e2);
+  border-radius: 20px;
+  background: linear-gradient(135deg, #f7fbfa 0%, #ffffff 62%, #f8fafc 100%);
+  text-align: center;
+}
+.channel-coming-soon-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.channel-coming-soon-content h2 {
+  margin: 14px 0 12px;
+  color: var(--ink, #10231f);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.12;
+  letter-spacing: -.035em;
+}
+.channel-coming-soon-content p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--muted, #64746f);
+  font-size: 16px;
+  line-height: 1.75;
+}
+.channel-coming-soon-platforms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+.channel-coming-soon-platforms span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid #dce6e2;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink, #10231f);
+  font-size: 13px;
+  font-weight: 700;
+}
+@media (max-width: 640px) {
+  .channel-coming-soon-section {
+    margin-top: 42px;
+    padding: 42px 20px;
+  }
+}
